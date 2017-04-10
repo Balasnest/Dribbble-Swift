@@ -9,6 +9,7 @@ import UIKit
 
 
 class BaseViewController: UIViewController {
+    
     var pageMenu: CAPSPageMenu?
 
     override func viewDidLoad() {
@@ -72,15 +73,6 @@ class BaseViewController: UIViewController {
         self.view.addSubview(pageMenu!.view)
         self.addChildViewController(pageMenu!)
         pageMenu?.didMove(toParentViewController: self)
-        
-        
-//        print("===== Optionals ======")
-//        let someInt: Int?
-//        print(someInt!)
-//        
-//        let otherInt:Int!
-//        otherInt = someInt
-//        print(otherInt)
         
     }
 
